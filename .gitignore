@@ -1,0 +1,14 @@
+# Files to ignore
+**.bak
+**.ddb
+**.qsf
+**.qws
+**.mti
+**.mpf
+**.wlf
+
+# Directories to ignore
+/db/
+/incremental_db/
+/output_files/
+**/work/
