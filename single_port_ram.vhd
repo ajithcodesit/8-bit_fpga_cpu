@@ -25,10 +25,10 @@ architecture rtl of single_port_ram is
 	--RAM signal (This register hold the value stored in the address accessed from RAM)
 	--Example for simple addition									
 --	signal r_ram : memory_t :=(
---										"00011110", 
---										"00101111",	
---										"11100000",	
---										"11110000", 
+--										"00011110", --LDA 14
+--										"00101111",	--ADD 15
+--										"11100000",	--OUT
+--										"11110000", --HALT
 --										"00000000", 
 --										"00000000", 
 --										"00000000", 
@@ -39,8 +39,8 @@ architecture rtl of single_port_ram is
 --										"00000000",
 --										"00000000",
 --										"00000000",
---										"00111000", 
---										"00011100"
+--										"00111000", --56 in binary at address 14
+--										"00011100"  --28 in binary at address 15
 --										);
 										
 	--Example for conditional jumps
