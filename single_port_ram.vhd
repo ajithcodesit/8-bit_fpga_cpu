@@ -24,44 +24,44 @@ architecture rtl of single_port_ram is
 	
 	--RAM signal (This register hold the value stored in the address accessed from RAM)
 	--Example for simple addition									
---	signal r_ram : memory_t :=(
---										"00011110", --LDA 14
---										"00101111",	--ADD 15
---										"11100000",	--OUT
---										"11110000", --HALT
---										"00000000", 
---										"00000000", 
---										"00000000", 
---										"00000000", 
---										"00000000",	
---										"00000000",
---										"00000000",
---										"00000000",
---										"00000000",
---										"00000000",
---										"00111000", --56 in binary at address 14
---										"00011100"  --28 in binary at address 15
---										);
-										
-	--Example for conditional jumps
 	signal r_ram : memory_t :=(
 										"00011110", --LDA 14
 										"00101111",	--ADD 15
 										"11100000",	--OUT
-										"01110101", --JC	5
-										"01100001", --JMP 1
-										"00111111", --SUB 15
-										"11100000", --OUT
-										"10000001", --JZ 	1
-										"01100101",	--JMP 5
+										"11110000", --HALT
+										"00000000", 
+										"00000000", 
+										"00000000", 
+										"00000000", 
+										"00000000",	
 										"00000000",
 										"00000000",
 										"00000000",
 										"00000000",
 										"00000000",
-										"00000001", --1 in binary at address 14
-										"00000001"	--1 in binary at addresss 15
+										"00111000", --56 in binary at address 14
+										"00011100"  --28 in binary at address 15
 										);
+										
+	--Example for conditional jumps
+--	signal r_ram : memory_t :=(
+--										"00011110", --LDA 14
+--										"00101111",	--ADD 15
+--										"11100000",	--OUT
+--										"01110101", --JC	5
+--										"01100001", --JMP 1
+--										"00111111", --SUB 15
+--										"11100000", --OUT
+--										"10000001", --JZ 	1
+--										"01100101",	--JMP 5
+--										"00000000",
+--										"00000000",
+--										"00000000",
+--										"00000000",
+--										"00000000",
+--										"00000001", --1 in binary at address 14
+--										"00000001"	--1 in binary at addresss 15
+--										);
 	
 	begin
 	
