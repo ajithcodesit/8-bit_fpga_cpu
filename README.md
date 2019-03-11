@@ -70,6 +70,10 @@ signal r_ram : memory_t := (
 Manually writing to RAM using DIP switches is not implemented.
 
 ## Demonstration
+Video Demonstration of the CPU in action.
+
+[![Demo Video](https://img.youtube.com/vi/5W5bYbguIHo/0.jpg)](https://www.youtube.com/watch?v=5W5bYbguIHo)
+
  The following simulation is for a simple add program that loads the values from ram and then stores the result of the addition in A register. The `test_cpu.vhd` testbench was used for the simulation.
  
 ![Add Program Sim](./simulation/test_cpu_add_example.bmp)
