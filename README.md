@@ -70,7 +70,7 @@ signal r_ram : memory_t := (
 Manually writing to RAM using DIP switches is not implemented.
 
 ## Demonstration
-Video Demonstration of the CPU in action.
+Video demonstration of the CPU in action.
 
 [![Demo Video](https://img.youtube.com/vi/5W5bYbguIHo/0.jpg)](https://www.youtube.com/watch?v=5W5bYbguIHo)
 
